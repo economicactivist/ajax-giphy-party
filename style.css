@@ -1,0 +1,64 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', serif;
+  
+}
+
+.page-container {
+  height: 100%;
+
+  border: red solid;
+  display: grid;
+  /* grid-template-rows: 10% 90%; */
+  grid-template:
+    'header' 20%
+    'main' 80%;
+}
+header {
+  grid-area: header;
+  align-items: end;
+  font-size: 400%;
+  display: grid;
+  grid-template: 1fr 1fr;
+  justify-items: end;
+  background-image: url('giphy_logo.png');
+  border: blue solid;
+  background-size: 50%;
+  /* width: 300px; */
+  padding-right: 11%;
+  padding-bottom: 1%;
+  color:#ff6666;
+  background-color: black;
+  
+  background-repeat: no-repeat; 
+  
+}
+
+
+
+
+form{
+    /* padding-bottom: 2em; */
+    display: flex;
+    
+}
+
+main {
+  grid-area: main;
+}
+
+.main-grid-container {
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+div img {
+  width: 100%;
+  height: 50%;
+}
